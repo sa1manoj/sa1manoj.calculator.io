@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+
+        <!-- css -->
+
+        <link rel="stylesheet" type="text/css" href="../MasterGST/Assets/CSS/style.css">
+
+        <!-- Font Awesome Latest Version -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Font Awesome 6 (Latest Version) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+        
+    </head>
+    <body>
+        <div class="flexing-outer-div">
+            <div class='heading'><h1>Calculator</h1></div>
+           
+        <div class="outerdiv">
+
+            <div class=display>
+            <p class="output-display "> </p>
+            <p class="input-display" id="Result-display"></p>
+        </div>
+
+            <div class='toolbar'><p class="notifier" style="color: white; opacity:0.5; margin: 0px; margin-left: 10px; display: inline;"> Note: '%' are treated as modular</p><span><button onclick="historyBlock()"><i class="fas fa-history" style="color: #ffffff;"></i></button></span></div>
+            <div class="historyBlockDiv">
+                <div class='htab'><p>x+y=z</p></div>
+                <div class='htab'><p>x+y=z</p></div>
+                <div class='htab'><p>x+y=z</p></div>
+                <div class='htab'><p>x+y=z</p></div>
+                <div class='htab'><p>x+y=z</p></div>
+            </div>
+            
+                <div class="components" >
+                <div>
+                <button class="numbers" onclick= "clearing()" >AC</button>
+                <button class="operands" onclick= "expression('%')"><i class="fas fa-percent"></i></button>
+                <button class="operands" ><i class="fa-solid fa-delete-left"></i></button>
+                <button class="operands" onclick= "expression('*')"><i class="fa-solid fa-xmark"></i></button></div>
+                <div style="display:flex; justify-content: space-evenly;">
+                <button class="numbers " onclick= "expression('7')">7</button>
+                <button class="numbers" onclick= "expression('8')">8</button>
+                <button class="numbers" onclick= "expression('9')">9</button>
+                 <button class="operands " onclick= "expression('+')"><i class="fa-solid fa-plus"></i></button></div>
+                <div><button class="numbers" onclick= "expression('4')">4</button>
+                <button class="numbers" onclick= "expression('5')">5</button>
+                <button class="numbers"onclick= "expression('6')">6</button>
+                 <button class="operands" onclick= "expression('-')"><i class="fa-solid fa-minus"></i></button></div>
+               <div ><button class="numbers" onclick= "expression('1')">1</button>
+                <button class="numbers" onclick= "expression('2')">2</button>
+                <button class="numbers" onclick= "expression('3')">3</button>
+                 <button class="operands" onclick= "expression('/')"><i class="fa-solid fa-divide"></i></button></div>
+                <div><button class="numbers" onclick= "expression('00')">00</button>
+                <button class="numbers" onclick= "expression('0')">0</button>
+                <button class="numbers"onclick= "expression('.')">.</button>
+                 <button class="operands" onclick= "calculate()">=</button></div>
+
+
+            </div>
+
+
+            </div>
+        </div>
+
+            <script src="../MasterGST/Assets/JS/Javascript.js"></script>
+
+    </body>
+</html>

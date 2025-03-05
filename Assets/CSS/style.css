@@ -1,0 +1,169 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../IMAGES/pngwing.com.png');
+}
+
+.flexing-outer-div{
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.heading{
+    display:block;
+    width: 100vw;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.heading h1{
+    margin:5px 0px 5px;
+    color: white;
+    text-shadow: 2px 5px black;
+    font-family: cursive;
+}
+.outerdiv{
+
+    display: block;
+    background-color:rgba(0, 0, 0, 1.0); 
+    width: fit-content; 
+    padding: 15px; 
+    height: 450px;
+    border-radius: 5px;
+    margin:auto;
+    margin-top:0px ;
+}
+
+
+
+
+.display{
+    height: 80px;
+    width: auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: gray;
+}
+
+
+
+.output-display{
+    background-color: transparent;
+    height: 35%;
+    width: inherit;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+    margin: 0px;
+    overflow: hidden;
+    text-align: right;
+}
+
+
+
+
+.input-display{
+    background-color: none;
+    height: 65%;
+    width: inherit;
+    color: white;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    border-top:2px solid dimgray;
+    margin: 0px;
+    overflow: auto;
+    text-align: right;
+}
+
+
+
+
+.components{
+    display:block;
+}
+
+
+
+
+.components div{
+    display:flex; justify-content: space-evenly;
+}
+
+
+
+
+.components button{
+        margin: 5px 5px;
+        height: 50px;
+        width: 50px;
+        border-color: transparent;
+        border-radius: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 1px 0px 5px white;
+        align-items: center;
+}
+
+
+
+
+.operands{
+    border-color: transparent;
+    background-color: coral;
+
+}
+
+
+
+
+
+
+.toolbar{
+    min-height: 50px;
+    width: inherit;
+    display: inline-flex;
+}
+
+
+
+
+.toolbar button{
+    background-color: transparent; 
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+
+.notifier{
+    color: white;
+}
+
+
+
+
+.historyBlockDiv{
+    padding: 5px;
+     max-height: 250px; 
+     color: white;
+    display: none;
+}
+
+
+
+.historyBlockDiv .htab{
+    margin: 10px 0px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: gray;
+    padding: 0px 10px;
+    max-height: 20%;
+}
+
+
